@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/semiTransparent"
+            android:layout_weight="0.08">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="3dp"
+                android:src="@drawable/bag"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi Bolsa de Pedidos"
+                android:textColor="@color/colorWhite"
+                android:textSize="19dp"
+                android:padding="5dp"
+                android:layout_gravity="left|center"/>
+        </LinearLayout>
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/lvBolsaItems"
+            android:layout_weight="0.82"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:paddingRight="15dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/goback"
+                    android:id="@+id/bnBolsaBack" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonface"
+                    android:text="Hacer Pedido"
+                    android:gravity="center"
+                    android:id="@+id/bnBolsaPedir"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorYellow"
+                    android:textSize="17dp"
+                    android:text="Total : 0.00"
+                    android:id="@+id/lbBolsaTotal" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

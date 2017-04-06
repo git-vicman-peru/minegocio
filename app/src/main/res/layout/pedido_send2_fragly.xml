@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgrounddrawer"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@color/semiTransparent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnfaceround"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="HACER PEDIDO  paso : 2 / 2"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/lvPedResItems"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="right|center_vertical"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/lbPedSend2Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorYellow"
+                    android:text="Total : 0.00"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:gravity="bottom|center_horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <Button
+                        android:id="@+id/bnPedSend2Prev"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/goleft"
+                        android:gravity="left|center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center">
+
+                    <Button
+                        android:id="@+id/bnPedSend2Enviar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/buttonface"
+                        android:gravity="center"
+                        android:text="Enviar Pedido" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbPedSend2PBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</FrameLayout>

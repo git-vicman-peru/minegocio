@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".BaseActivity">
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/backgrounddrawer"
+        android:paddingLeft="25dp"
+        android:paddingTop="22dp">
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="85dp"
+                android:src="@drawable/minegocio"
+                android:id="@+id/dw_imglogo"
+                android:layout_weight="0.5"
+                android:clickable="true"/>
+            <mobapp.vic.components.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgLoginUser"
+                android:padding="3dp"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/dw_categorylist"
+            android:layout_width="186dp"
+            android:layout_height="182dp"
+            android:layout_gravity="start"
+            android:background="@color/colorTransparent"
+            android:choiceMode="singleChoice"/>
+
+        <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:background="@drawable/btnshadeb"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="6dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:background="@drawable/subscribeblue"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_weight="0.5"
+                android:id="@+id/bnRegistrarme"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:background="@drawable/llaveblue"
+                android:scaleX="0.6"
+                android:scaleY="0.5"
+                android:layout_weight="0.5"
+                android:id="@+id/bnLogearme"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btnshadeb"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/mi_pedidos"
+                android:scaleX="0.6"
+                android:scaleY="0.7"
+                android:id="@+id/bnMisPedidos"
+                android:layout_weight="0.5"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:background="@drawable/bag"
+                android:scaleX="0.5"
+                android:scaleY="0.47"
+                android:id="@+id/bnMiBolsa"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dw_bnfavoritos"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btnshadeb"
+            android:clickable="true"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/megustarojo"
+                android:id="@+id/dw_imgfavoritos" />
+
+            <TextView
+                android:id="@+id/dw_txfavoritos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:text="Favoritos" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dw_bnconfigura"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btnshadeb"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/mi_configura"
+                android:id="@+id/dw_imgconfigura" />
+
+            <TextView
+                android:id="@+id/dw_txconfigura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:text="Configurar" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dw_bnsalir"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btnshadeb"
+            android:clickable="true"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/mi_quit"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:id="@+id/dw_imgsalir" />
+
+            <TextView
+                android:id="@+id/dw_txsalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:text="Salir" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

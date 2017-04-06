@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="01)"
+        android:id="@+id/lbPedItemNum"
+        android:layout_weight="0.1"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:src="@drawable/noimage"
+        android:id="@+id/ivPedItemFoto"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/lbPedItemCantidad"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/lbPedItemDescrip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.37"
+        android:text="Descripcion" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:id="@+id/lbPedItemPrecio"
+        android:layout_weight="0.15"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_overlay"
+        android:text="0.00"
+        android:id="@+id/lbPedItemSubtotal"
+        android:layout_weight="0.18"
+        android:layout_gravity="center"/>
+</LinearLayout>
